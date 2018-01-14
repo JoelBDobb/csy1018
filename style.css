@@ -1,0 +1,126 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+body
+{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  line-height: 100%;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.5em;
+  color: hsl(0, 0%, 20%);
+}
+
+.nav
+{
+  order: -1;
+  padding: 1em;
+  background: rgb(149, 194, 215);
+}
+.footer
+{
+  padding: 1em;
+  background: rgb(27, 83, 110);
+  text-align: center;
+}
+.wrapper
+{
+  display: flex;
+  flex-direction: column;
+  flex; 1 0 auto;
+}
+.main
+{
+  padding: 1em;
+  background: rgb(187, 179, 135);
+  text-align: center;
+}
+.aside
+{
+  padding: 1em;
+  text-align: center;
+  background: rgb(224, 220, 199);
+}
+@media (max-width: 30em)
+{
+  .main 
+  {
+    flex: 1 0 auto;
+  }
+}
+@media (min-width: 30em)
+{
+  .nav
+  {
+    display: block;
+  }
+  .wrapper
+  {
+    flex-direction: row;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  margin: 50px;
+}
+
+ul {
+  overflow: auto;
+  list-style-type: none;
+}
+
+li {
+  height: 25px;
+  float: left;
+  margin-right: 0px;
+  border-right: 1px solid 
+    #aaa;
+  padding: 0 20px;
+}
+
+p {
+  float: left;
+  text-align: left;
+  padding: 0 20px;
+  font-size: 20px;
+}
+h1 {
+  height: 50px;
+}
+h3 {
+  height:  40px;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  text-decoration: none;
+  color: #ccc;
+  font: 20px/1 Helvetica, Verdana, sans-serif;
+  text-transform: uppercase;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+li a:hover {
+  color: #666;
+}
+
+li.active a {
+  font-weight: bold;
+  color: #333;
+}
